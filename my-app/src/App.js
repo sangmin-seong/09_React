@@ -10,6 +10,14 @@ import StateEx1 from './components/R06_State1';
 import StateEx2 from './components/R07_State2';
 import StateEx3 from './components/R08_State3';
 
+import StateReview1 from './review/State_Review1';
+import StateReview2 from './review/State_Review2';
+
+import Context1 from './components/R09_Context1';
+import Context2 from './components/R10_Context2';
+
+import Parent from './R11_Context3/Parent';
+
 // -> R01_ClassComponent에서 export된 HTML 요소를
 //    ClassCOmponent라고 부르겠다  --> <ClassComponent/> 형태로 사용가능!!!
 
@@ -21,45 +29,60 @@ import StateEx3 from './components/R08_State3';
 function App() {
   return (
     <>
-    {/* JSX(JS에서 HTML 작성하는 것) 주석 */}
+        {/* JSX(JS에서 HTML 작성하는 것) 주석 */}
 
-    {/* 클래스형 컴포넌트 */}
-    {/* <ClassComponent/> */}
+        {/* 클래스형 컴포넌트 */}
+        {/* <ClassComponent/> */}
 
-    
-    {/* <FunctionComponent/> */}
-    {/* <Props1 num ='1' name ='홍길동'/>
-    <Props1 num ='2' name ='김미영'/>
-    <Props1/> */}
-    
-    <hr/>
+        
+        {/* <FunctionComponent/> */}
+        {/* <Props1 num ='1' name ='홍길동'/>
+        <Props1 num ='2' name ='김미영'/>
+        <Props1/> */}
+        
+        <hr/>
 
-    {/* <Props2 name='철수'
-            age='29' 
-            address='영등포' 
-            gender='M'/>
+        {/* <Props2 name='철수'
+                age='29' 
+                address='영등포' 
+                gender='M'/>
 
-    <Props2 name='영희'
-            age='12' 
-            address='미아' 
-            gender='F'/> */}
-
-
-    <hr/>
-
-    {/* <Props3 productName ='라면'
-            price = '3000'/> */}
+        <Props2 name='영희'
+                age='12' 
+                address='미아' 
+                gender='F'/> */}
 
 
-    <hr/>
+        <hr/>
 
-    <StateEx1/>
-    <StateEx2 init='0'/>
+        {/* <Props3 productName ='라면'
+                price = '3000'/> */}
 
-    <hr/>
-    
-    <StateEx3/>
 
+        <hr/>
+
+        {/* <StateEx1/>
+        <StateEx2 init='0'/>
+
+        <hr/>
+        
+        <StateEx3/> */}
+
+        <hr/>
+
+        {/* <StateReview1/>
+        <hr/>
+        <StateReview2/> */}
+
+        {/* <Context1/>
+
+        <hr/>
+
+        <Context2/> */}
+
+        <hr/>
+
+        <Parent/>
     </>
   );
 }
